@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+   height:100vh;
+   display:flex; 
+   font-family: 'Tilt Neon', sans-serif;
+    cursor:pointer;
+}
+.left, .right{
+    width:50%;
+    height:100%;
+}
+.left{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: rgb(209, 220, 231);
+}
+.left .inputs{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    margin-bottom:2rem;
+
+}
+.left textarea{
+    width:30vw;
+    height:250px;
+    box-shadow: 4px 4px 10px 0px #803636;
+    padding-left:12px;
+    padding-top:10px;
+    font-size: 0.85rem;
+  
+
+}
+.left textarea:hover{
+    border-color:black;
+}
+
+button{
+    width:120px;
+    height:50px;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    /* background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a); */
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+    border-radius:30px;
+    padding:4px;
+    border:none;
+    color:white;
+    font-size:0.9rem;
+    font-weight:bold;
+    text-align:center;
+    transition: background-image 3s ease;
+}
+button:hover{
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a, #fbb03b);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+.right{
+    background-color:whitesmoke;
+    color:black;
+    display:flex;
+    flex-direction:column;
+    position: relative;
+}
+.right h2{
+    font-size:2em;
+    font-weight:bold;
+    margin-top:4px;
+    text-align: center;
+}
+.notesPara {
+margin-left:35%;
+margin-top: 25%;
+}
+/* adding note element  in js  */
+.notesContainer{
+    display:flex;
+    flex-wrap:wrap;
+    gap:5px;
+}
+.note{
+    border-radius:5px;
+    padding-top:32px;
+    padding-left:10px;
+    padding-right:20px;
+    position:relative;
+    width:180px;
+    height:180px;
+    border:2px solid black;
+}
+.text{
+    height:130px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.text::-webkit-scrollbar{
+    display: none;
+}
+.close{
+    position:absolute;
+    top:5px;
+    right:5px;
+    cursor:pointer;
+}
+
+
